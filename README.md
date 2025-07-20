@@ -3,4 +3,4 @@ A platform where you can find the list of various travel destinations and also y
 You can also give reviews and can check the location on the map.
 
 
-Live Demo: https://roamify-29r2.onrender.com
+Live Link: https://roamify-29r2.onrender.com
