@@ -57,9 +57,9 @@ const sessionOptions={
     }
 }
 
-app.get("/",(req,res)=>{
-    res.redirect("/listings");
-})
+// app.get("/",(req,res)=>{
+//     res.send("I am root");
+// })
 
 app.use(session(sessionOptions));
 app.use(flash());
@@ -77,6 +77,15 @@ app.use((req,res,next)=>{
     res.locals.error=req.flash("error");
     res.locals.currUser=req.user;
     next();
+})
+
+app.get("/",(req,res)=>{
+   res.redirect("/listings");
+})
+
+//Book Route
+app.get("/listings/book",(req,res)=>{
+    return res.render("listings/book");
 })
 
 app.use("/listings",listingRouter); //iss path se suru hone wali saari req will go to listings object
@@ -98,5 +107,6 @@ app.use((err,req,res,next)=>{
 app.listen(8080,()=>{
     console.log("server is listening on port 8080");
 })
+
 
 

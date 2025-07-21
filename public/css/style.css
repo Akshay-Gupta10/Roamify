@@ -123,3 +123,9 @@ body{
     width: 800px;
 }
 
+.span-class{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
