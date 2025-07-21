@@ -42,9 +42,9 @@ https://roamify-29r2.onrender.com
 - Dotenv (secure config management)
 
 ## ⚙️ Installation
-1.Install all the dependencies i.e. npm install
+1. Install all the dependencies i.e. npm install
 
-2.Create a file named ".env" and enter the following credentials: 
+2. Create a file named ".env" and enter the following credentials: 
 MAP_TOKEN=your_mapbox_token
 CLOUDINARY_CLOUD_NAME=your_cloud_name
 CLOUDINARY_KEY=your_api_key
@@ -52,11 +52,11 @@ CLOUDINARY_SECRET=your_api_secret
 DB_URL=your_mongodb_connection_string
 SECRET=session_secret_key
 
-3.Run the web application i.e. npm start
+3. Run the web application i.e. npm start
 
-4.Open http://localhost:8080
+4. Open http://localhost:8080
 
-5.You need to first signup and then login to run the application.
+5. You need to first signup and then login to run the application.
 
 ## Developed By
 - *Name*: Akshay Gupta
