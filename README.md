@@ -5,8 +5,6 @@
 ## 🔗 Live Demo
 https://roamify-29r2.onrender.com
 
----
-
 ## 🚀 Features
 
 - 📝 Add, edit, view, and delete property listings
@@ -16,8 +14,6 @@ https://roamify-29r2.onrender.com
 - 💬 Flash messages and error handling
 - 🧭 Mobile-friendly UI with responsive layout
 - 🌍 RESTful routing and modular backend structure
-
----
 
 ## 🛠️ Tech Stack
 
@@ -45,8 +41,7 @@ https://roamify-29r2.onrender.com
 - Multer (file handling)
 - Dotenv (secure config management)
 
----
-**Installation**
+## ⚙️ Installation
 1.Install all the dependencies i.e. npm install
 
 2.Create a file named ".env" and enter the following credentials: 
@@ -62,3 +57,8 @@ SECRET=session_secret_key
 4.Open http://localhost:8080
 
 5.You need to first signup and then login to run the application.
+
+## Developed By
+- *Name*: Akshay Gupta
+- *Email*: akshaygupta.1018@gmail.com
+
