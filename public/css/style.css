@@ -30,6 +30,7 @@ body{
     color: #222222;
 }
 
+
 .f-info-links a:hover{
     text-decoration: underline;
 }
@@ -42,9 +43,16 @@ body{
     align-items: center;
 }
 
-.f-info-socials i{
+.f-info-socials a i{
+    color: #222222;
     font-size: 1.2rem;
+    opacity: 0.9;
     margin-right: 0.9rem;
+}
+
+.f-info-socials a i:hover{
+    opacity: 1;
+    font-size: 1.3rem;
 }
 
 .f-info{
