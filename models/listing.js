@@ -37,10 +37,10 @@ const listingSchema= new Schema({
             required: true
         }
     },
-    // category:{
-    //     type:String,
-    //     enum:["mountains","castles","etc"];
-    // }
+    category:{
+        type:String,
+        required:true
+    }
 })
 
 //post middleware for handling the deletion of reviews in case of listing deletion
