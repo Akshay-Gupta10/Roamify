@@ -22,6 +22,7 @@ router.route("/")
 //New Route (ye wala show route se upr rhega wrna new ko as an id smjh lia jyega)
 router.get("/new",isLoggedIn,listingController.renderNewForm);
 
+//Top bar
 router.get("/room",isLoggedIn,listingController.renderRoom);
 
 
