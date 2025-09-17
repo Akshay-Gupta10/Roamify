@@ -37,8 +37,6 @@ router.get("/boat",isLoggedIn,topBarController.renderBoat);
 
 
 
-
-
 router.route("/:id")
 .get(wrapAsync(listingController.showListing)) //Show Route
 .put(isLoggedIn,isOwner,upload.single("listing[image]"),validateListing, wrapAsync(listingController.updateListing)) //Update Route
