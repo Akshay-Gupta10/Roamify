@@ -8,6 +8,7 @@ const router=express.Router();
 const wrapAsync=require("../utils/wrapAsync.js");
 const {isLoggedIn, isOwner, validateListing}=require("../middleware.js");
 const listingController=require("../controllers/listings.js");
+const topBarController=require("../controllers/topbar.js");
 const multer=require("multer")
 const {storage}=require("../cloudConfig.js")
 const upload=multer({storage })
@@ -23,7 +24,18 @@ router.route("/")
 router.get("/new",isLoggedIn,listingController.renderNewForm);
 
 //Top bar
-router.get("/room",isLoggedIn,listingController.renderRoom);
+router.get("/room",isLoggedIn,topBarController.renderRoom);
+router.get("/city",isLoggedIn,topBarController.renderCity);
+router.get("/castle",isLoggedIn,topBarController.renderCastle);
+router.get("/mountain",isLoggedIn,topBarController.renderMountain);
+router.get("/pool",isLoggedIn,topBarController.renderPool);
+router.get("/arctic",isLoggedIn,topBarController.renderArctic);
+router.get("/camping",isLoggedIn,topBarController.renderCamping);
+router.get("/farm",isLoggedIn,topBarController.renderFarm);
+router.get("/dome",isLoggedIn,topBarController.renderDome);
+router.get("/boat",isLoggedIn,topBarController.renderBoat);
+
+
 
 
 

@@ -12,11 +12,6 @@ module.exports.renderNewForm=(req,res)=>{
     res.render("listings/new.ejs");
 }
 
-module.exports.renderRoom=async(req,res)=>{
-    const roomListings=await Listing.find({country:"India"})
-    res.render("listings/room.ejs",{roomListings});
-}
-
 module.exports.showListing=async(req,res)=>{
     let {id}=req.params;
     const listing=await Listing.findById(id)
